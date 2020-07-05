@@ -1,5 +1,9 @@
 node ('node'){
    stage ('git checkout'){
-      git credentialsId: 'git-token', url: 'https://github.com/Aakash-Elango/html'
+      try{
+         git credentialsId: 'git-token', url: 'https://github.com/Aakash-Elango/html'
+      } catch (err) {
+         sh "echo error in checkout"
+      }
    }
 }
