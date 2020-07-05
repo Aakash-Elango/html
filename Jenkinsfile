@@ -25,3 +25,4 @@ node2 ('node2'){
          sh "echo error in checkout"
       }
    }
+}
