@@ -9,6 +9,9 @@ node ('node'){
    stage ('echo stage'){
       sh "echo Hello World"
    }
+   stage ('echo name'){
+      sh "echo Aakash"
+   }
    stage ('create a file'){
       sh "touch abc.txt"
    }
