@@ -17,7 +17,7 @@ node ('node'){
    }
 }
 
-node2 ('node2'){
+node ('node2'){
    stage ('git checkout'){
       try{
          git credentialsId: 'git-token', url: 'https://github.com/Aakash-Elango/html'
